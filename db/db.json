@@ -1,0 +1,53 @@
+{
+    "items": [
+      {
+        "image": "./img/egg.png",
+        "name": "Eggs",
+        "price": 500,
+        "id": 1
+      },
+      {
+        "image": "./img/pizza.png",
+        "name": "Pizza",
+        "price": 1500,
+        "id": 2
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta",
+        "price": 2000,
+        "id": 3
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta Penne",
+        "price": 10000,
+        "id": 4
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta Penne",
+        "price": 10000,
+        "id": 4
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta Penne",
+        "price": 10000,
+        "id": 4
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta Penne",
+        "price": 10000,
+        "id": 4
+      },
+      {
+        "image": "./img/spaguetti.png",
+        "name": "Pasta Penne",
+        "price": 10000,
+        "id": 4
+      }
+
+    ]
+  }

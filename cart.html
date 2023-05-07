@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <my-cart-aside></my-cart-aside>
+
+        <main id="container-cart">
+            <h1 class="principal-title">Shopping Cart</h1>
+            <p>Your cart is empty <i class="bi bi-emoji-frown-fill"></i></p>
+
+            <div class="current-cart">
+                <div class="current-item">
+                    <img class="item-img" src='./img/egg.png'>
+                    <div class="item-title">
+                        <small>Name</small>
+                        <h3 class="item-name">${item.name}</h3>
+                    </div>
+                    <div class="item-amount">
+                        <small>Amount</small>
+                        <p>1</p>
+                    </div>
+                    <div class="item-price">
+                        <small>Price</small>
+                        <p>0</p>
+                    </div>
+                    <div class="total">
+                        <small>Total</small>
+                        <p>0</p>
+                    </div>
+                    <button id="delete-btn"><i class="bi bi-trash-fill"></i></button>
+                </div>
+                <div class="current-item">
+                    <img class="item-img" src='./img/egg.png'>
+                    <div class="item-title">
+                        <small>Name</small>
+                        <h3 class="item-name">${item.name}</h3>
+                    </div>
+                    <div class="item-amount">
+                        <small>Amount</small>
+                        <p>1</p>
+                    </div>
+                    <div class="item-price">
+                        <small>Price</small>
+                        <p>0</p>
+                    </div>
+                    <div class="total">
+                        <small>Total</small>
+                        <p>0</p>
+                    </div>
+                    <button id="delete-btn"><i class="bi bi-trash-fill"></i></button>
+                </div>
+            </div>
+
+            <div class="options-cart">
+                <div class="clear-cart">
+                    <button id="clear-btn">Clear Cart</button>
+                </div>
+
+                <div class="buy-cart">
+                    <div class="total">
+                        <p>Total:</p>
+                        <p>0</p>
+                        <button id="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
