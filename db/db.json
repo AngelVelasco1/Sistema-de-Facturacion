@@ -4,49 +4,83 @@
         "image": "./img/egg.png",
         "name": "Eggs",
         "price": 500,
-        "id": 1
+        "id": 1,
+        "category": {
+          "name": "food"
+        }
+
       },
       {
         "image": "./img/pizza.png",
         "name": "Pizza",
         "price": 1500,
-        "id": 2
+        "id": 2,
+        "category": {
+          "name": "food"
+        }
       },
       {
         "image": "./img/spaguetti.png",
         "name": "Pasta",
         "price": 2000,
-        "id": 3
+        "id": 3,
+        "category": {
+          "name": "food"
+        }
       },
       {
         "image": "./img/spaguetti.png",
         "name": "Pasta Penne",
         "price": 10000,
-        "id": 4
+        "id": 4,
+        "category": {
+          "name": "food"
+        }
       },
       {
         "image": "./img/spaguetti.png",
         "name": "Pasta Penne",
         "price": 10000,
-        "id": 4
+        "id": 5,
+        "category": {
+          "name": "food"
+        }
       },
       {
         "image": "./img/spaguetti.png",
         "name": "Pasta Penne",
         "price": 10000,
-        "id": 4
+        "id": 6,
+        "category": {
+          "name": "food"
+        }
       },
       {
         "image": "./img/spaguetti.png",
         "name": "Pasta Penne",
         "price": 10000,
-        "id": 4
+        "id": 7,
+        "category": {
+          "name": "food"
+        }
       },
       {
-        "image": "./img/spaguetti.png",
-        "name": "Pasta Penne",
+        "image": "./img/pc.png",
+        "name": "Laptop",
         "price": 10000,
-        "id": 4
+        "id": 8,
+        "category": {
+          "name": "tech"
+        }
+      },
+      {
+        "image": "./img/pc.png",
+        "name": "Laptop",
+        "price": 10000,
+        "id": 8,
+        "category": {
+          "name": "tech"
+        }
       }
 
     ]

@@ -1,16 +1,22 @@
 /* Web components */
-import './components/my-aside.js'
-import './components/my-cart-aside.js'
-/* Functions */
-import { getItem } from './Api/getApi.js'
+import "./components/my-aside.js";
+import "./components/my-cart-aside.js";
 
-async function showAllItems() {
-    try {
-        const container = document.querySelector('.container-all-items');
-        const items = await getItem();
-      
-        const template = items.map((item) => {
-            return `
+/* Functions */
+import { getItem } from "./Api/getApi.js";
+
+/* Show All items */
+export async function showAllItems(category) {
+  try {
+    const container = document.querySelector(".container-all-items");
+    const items = await getItem();
+
+    const filteredItems = category
+      ? items.filter((item) => item.category.name === category)
+      : items;
+
+    const template = filteredItems.map((item) => {
+      return `
             <div class="item">
             <img class="item-img-all" src='${item.image}'>
             <div class="item-details">
@@ -20,12 +26,17 @@ async function showAllItems() {
             </div>
             </div>
           
-            `
-        });
-        container.innerHTML += template.join('')
-    }
-    catch (err) {
-        console.log(err);
-    }
+            `;
+    });
+    container.innerHTML = template.join("");
+  } catch (err) {
+    console.log(err);
+  }
 }
-document.addEventListener('DOMContentLoaded', showAllItems);
+/* Categories */
+export async function showItemsByCategory(category) {
+  const container = document.querySelector(".container-all-items");
+  container.innerHTML = "";
+  await showAllItems(category);
+}
+document.addEventListener("DOMContentLoaded", showAllItems());
