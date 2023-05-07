@@ -14,14 +14,17 @@ export default class myAside extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
   handleEvent(e) {
+    
     if (e.type === "click" && e.currentTarget.id !== "items") {
       const category = e.currentTarget.id;
       showItemsByCategory(category);
+      
     } else {
       showAllItems();
     }
   }
   worker() {
+    
     let wk = new Worker("../storage/wkItems.js", { type: "module" });
     wk.postMessage({ message: "Hola bebe " });
     wk.addEventListener("message", (e) => {});
@@ -33,7 +36,10 @@ export default class myAside extends HTMLElement {
       this.buttons.forEach((button) =>
         button.addEventListener("click", this.handleEvent.bind(this))
       );
+
     });
   }
+  
 }
+
 customElements.define(name, myAside);

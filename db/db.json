@@ -77,7 +77,7 @@
         "image": "./img/pc.png",
         "name": "Laptop",
         "price": 10000,
-        "id": 8,
+        "id": 9,
         "category": {
           "name": "tech"
         }
