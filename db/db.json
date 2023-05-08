@@ -27,7 +27,7 @@
       "email": "Juan@gmail.com",
       "address": "street 5",
       "id_num": "457415",
-      "entry": "2020",
+      "entry": "2005",
       "id_team": 2,
       "id_recluta": 1,
       "id_module": 1,
@@ -75,6 +75,102 @@
       "skill": {
         "name": "Backend Development"
       }
+    },
+    {
+      "name": "",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "fronted",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "basic",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "basic",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "basic",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 8
+    },
+    {
+      "name": "FDSDS",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "basic",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "phone": "",
+      "age": "",
+      "email": "",
+      "qualified": "1",
+      "skill": "basic",
+      "team": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "entry": "",
+      "birth": "",
+      "id": 10
     }
   ]
 }

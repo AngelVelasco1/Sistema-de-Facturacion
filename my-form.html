@@ -11,19 +11,19 @@
 </head>
 <body>
     <div class="login-box">
-        <form id="add-camper-form" action="#" method="POST" >
+        <form id="add-camper-form" action="#" method="POST">
             <label>Welcome</label>
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input  type="text" id="name" required>
     
             <label for="phone">Phone</label>
-            <input type="number" id="phone">
+            <input  type="number" id="phone" required>
     
             <label for="email">Email</label>
-            <input type="email" id="email">
+            <input  type="email" id="email" required>
     
             <label for="quialified">Qualified</label>
-            <select name="qualified" id="qualified">
+            <select  name="qualified" id="qualified" required>
                 <option value="1">1.0</option>
                 <option value="2">2.0</option>
                 <option value="3">3.0</option>
@@ -32,27 +32,27 @@
             </select>
     
             <label for="skill">Skill</label>
-            <select name="skill" id="skill">
+            <select  name="skill" id="skill" required>
                 <option value="basic">Basic programming</option>
-                <option value="fronted">Fontend Development</option>
+                <option value="frontend">Frontend Development</option>
                 <option value="backend">Backend Development</option>
             </select>
 
             <label for="team">Team</label>
-            <select name="team" id="team">
+            <select  name="team" id="team" required>
                 <option value="Apolo">Apolo</option>
                 <option value="Artemis">Artemis</option>
                 <option value="Sputnik">Sputnik</option>
             </select>
 
             <label for="age">Age</label>
-            <input type="number" id="age">
+            <input  type="number" id="age" required>
 
             <label for="entry">Entry date</label>
-            <input type="date" id="entry">
+            <input  type="date" id="entry" required>
 
             <label for="birth">Date of birth</label>
-            <input type="date" id="birth">
+            <input type="date" id="birth" >
             <button type="submit" value="submit" id="submit-form">Add Camper</button>
         </form>
     </div>

@@ -50,15 +50,19 @@ export default class myCartAside extends HTMLElement {
                     <div class="item-price">
                         <small>Entry date</small>
                         <p>${camper.entry_date}</p>
+                   
                     </div>
                     <div class="total">
                         <small>Qualified</small>
                         <p>${camper.qualified}</p>
+                        <small>Skill</small>
+                        <p>${camper.skill}</p>
                     </div>
                     <div class="total">
                     <small>Team</small>
                     <p>${camper.team}</p>
                 </div>
+                
                     <button class="delete-btn" id="${
                       camper.id
                     }"><i class="bi bi-trash-fill"></i></button>

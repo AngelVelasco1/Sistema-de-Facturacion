@@ -36,6 +36,10 @@ function validateCamper(e){
   
     addCamper(camperData)
 }
+if(validate(camperData)) {
+    alert('Complete all')
+    return
+}
 function validate(object) {
     return  (Object.values(object).every(camper => camper !== ''));
 }
