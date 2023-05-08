@@ -1,48 +1,131 @@
 {
     "reclutas": [
       {
+        "image": "../img/usuario.png",
         "id": 1,
         "name": "Juan",
-        "phone": 500,
+        "phone": 341748741,
         "email": "Juan@gmail.com",
         "address": "street 5",
         "id_num": "457415",
         "entry_date": "2020",
-        "id_team": 1
-
+        "id_team": 1,
+        "evaluation": [
+          {
+              "id_recluta": 1,
+              "id_module": 1,
+              "qualified": 3
+          }
+        ]
+     
       },  
       {
+        "image": "../img/usuario.png",
         "id": 2,
         "name": "Angel",
-        "phone": 500,
+        "phone": 3745754,
         "email": "Juan@gmail.com",
         "address": "street 5",
         "id_num": "457415",
         "entry_date": "2020",
-        "id_team": 1
+        "id_team": 2,
+        "evaluation": [
+          {
+              "id_recluta": 1,
+              "id_module": 1,
+              "qualified": 5
+          }
+        ]
 
       },
       {
+        "image": "../img/usuario.png",
         "id": 3,
         "name": "Maria",
-        "phone": 500,
+        "phone": 3121245454,
         "email": "Juan@gmail.com",
         "address": "street 5",
         "id_num": "457415",
         "entry_date": "2020",
-        "id_team": 3
+        "id_team": 3,
+        "evaluation": [
+          {
+              "id_recluta": 1,
+              "id_module": 1,
+              "qualified": 5
+          }
+        ]
 
       },
       {
+        "image": "../img/usuario.png",
         "id": 4,
         "name": "Camilo",
-        "phone": 500,
+        "phone": 35441245,
         "email": "Juan@gmail.com",
         "address": "street 5",
         "id_num": "457415",
         "entry_date": "2020",
-        "id_team": 4
+        "id_team": 4,
+        "evaluation": [
+          {
+              "id_recluta": 1,
+              "id_module": 1,
+              "qualified": 4
+          }
+        ]
 
       }
+    ],
+    "teams": [
+      {
+        "id": "1",
+        "name": "Apolo",
+        "trainer": "Sergio"
+      },
+      {
+        "id": "2",
+        "name": "Artemis",
+        "trainer": "Juanes"
+      },
+      {
+        "id": "3",
+        "name": "Sputnik",
+        "trainer": "Miguel"
+      }
+    ],
+    "skills": [
+      {
+        "id": "1",
+        "name": "",
+        "module_skill": [
+          {
+            "id": 1,
+            "name": "Basic Programming"
+          }
+        ] 
+      },
+      {
+        "id": "2",
+        "name": "",
+        "module_skill": [
+          {
+            "id": 2,
+            "name": "Frontend Development"
+          }
+        ] 
+      },
+      {
+        "id": "3",
+        "name": "",
+        "module_skill": [
+          {
+            "id": 3,
+            "name": "Backend Development"
+          }
+        ] 
+      }
     ]
-  }
+}
+  
+  

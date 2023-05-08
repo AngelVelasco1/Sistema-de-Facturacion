@@ -2,13 +2,13 @@
 import "./components/my-aside.js";
 import "./components/my-cart-aside.js";
 /* Functions */
-import { getItem } from "./Api/getApi.js";
+import { getReclutas } from "./Api/getApi.js";
 
 /* Show All items */
-export async function showAllItems(category) {
+export async function showReclutas(category) {
   try {
     const container = document.querySelector(".container-all-items");
-    const items = await getItem();
+    const items = await getReclutas();
 
     const filteredItems = category
       ? items.filter((item) => item.category.name === category)
@@ -20,7 +20,10 @@ export async function showAllItems(category) {
             <img class="item-img-all" src='${item.image}'>
             <div class="item-details">
                 <h3 class="item-name">${item.name}</h3>
-                <p class="item-price">${item.price}</p>
+                <p class="item-price">${item.phone}</p>
+                <p class="item-price">${item.email}</p>
+                <p class="item-price">${item.address}</p>
+                <p class="item-price">${item.phone}</p>
                 <button class="item-add" id="${item.id}"><span>Add</span></button>
             </div>
             </div>
@@ -75,7 +78,7 @@ export async function showAllItems(category) {
 export async function showItemsByCategory(category) {
   const container = document.querySelector(".container-all-items");
   container.innerHTML = "";
-  await showAllItems(category);
+  await showReclutas(category);
 }
 /* Call function */
-document.addEventListener("DOMContentLoaded", showAllItems());
+document.addEventListener("DOMContentLoaded", showReclutas());

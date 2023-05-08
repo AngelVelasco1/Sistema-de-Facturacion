@@ -1,6 +1,6 @@
 /* Main functions */
 import { showItemsByCategory } from "../main.js";
-import { showAllItems } from "../main.js";
+import { showReclutas } from "../main.js";
 
 let pathName = new URL(import.meta.url).pathname;
 let name = pathName.split("/").pop().replace(".js", "");
@@ -20,7 +20,7 @@ export default class myAside extends HTMLElement {
       showItemsByCategory(category);
       
     } else {
-      showAllItems();
+      showReclutas();
     }
   }
   worker() {

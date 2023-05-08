@@ -25,13 +25,13 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-image: url(../img/bg.jpg);
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: var(--bg-color);
+    background-image: url(../img/bg.jpg);
 }
 .hidden {
     display: none !important;
