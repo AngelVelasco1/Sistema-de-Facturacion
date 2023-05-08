@@ -43,8 +43,6 @@ export default class myAside extends HTMLElement {
         button.addEventListener("click", this.handleEvent.bind(this))
         
       );
-
-
     });
   }
   

@@ -71,66 +71,6 @@
       "team": "Sputnik",
       "skill": "Frontend Development",
       "birth": "2023-05-12"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "Basic Programming",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "entry": "",
-      "birth": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "Basic Programming",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "entry": "",
-      "birth": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "Basic Programming",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "entry": "",
-      "birth": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "Basic Programming",
-      "team": "Artemis",
-      "entry": "",
-      "birth": "",
-      "id": 8
     }
   ]
 }

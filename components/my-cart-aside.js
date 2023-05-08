@@ -49,9 +49,11 @@ export default class myCartAside extends HTMLElement {
                     
                     <div class="item-price">
                         <small>Entry date</small>
-                        <p>${camper.entry_date}</p>
-                   
+                        <p>${camper.entry}</p>
+                        <small>Birth</small>
+                        <p>${camper.birth}</p>
                     </div>
+                 
                     <div class="total">
                         <small>Qualified</small>
                         <p>${camper.qualified}</p>
