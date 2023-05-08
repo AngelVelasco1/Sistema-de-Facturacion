@@ -17,12 +17,12 @@ export const getReclutas = async (item) => {
         console.log(err);
     }
 }
-/* Method get (Get teams) */
-export const getTeams = async (item) => {
+/* Method POST (add camper) */
+export const addCamper = async (camper) => {
     try {
-        const response = await fetch(`${urlEndPoint}/teams`, {
-            method: 'GET',
-            body: JSON.stringify(item),
+        const response = await fetch(`${urlEndPoint}/reclutas`, {
+            method: 'POST',
+            body: JSON.stringify(camper),
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -34,21 +34,3 @@ export const getTeams = async (item) => {
         console.log(err);
     }
 }
-/* Method get (Get skills) */
-export const getSkills = async (item) => {
-    try {
-        const response = await fetch(`${urlEndPoint}/skills`, {
-            method: 'GET',
-            body: JSON.stringify(item),
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        });
-        const items = await response.json()
-        return items;
-    }
-    catch (err) {
-        console.log(err);
-    }
-}
-

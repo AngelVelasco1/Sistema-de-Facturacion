@@ -7,31 +7,35 @@ import { getReclutas } from "./Api/getApi.js";
 /* Show All items */
 export async function showReclutas(category) {
   try {
+    
     const container = document.querySelector(".container-all-items");
     const items = await getReclutas();
 
     const filteredItems = category
-      ? items.filter((item) => item.category.name === category)
+      ? items.filter((item) => item.team === category)
       : items;
 
-    const template = filteredItems.map((item) => {
+    const template = filteredItems.map((camper) => {
       return `
+      
             <div class="item">
-            <img class="item-img-all" src='${item.image}'>
+            <img class="item-img-all" src='${camper.image}' onerror="this.src='./img/usuario.png'  ">
             <div class="item-details">
-                <h3 class="item-name">${item.name}</h3>
-                <p class="item-price">${item.phone}</p>
-                <p class="item-price">${item.email}</p>
-                <p class="item-price">${item.address}</p>
-                <p class="item-price">${item.phone}</p>
-                <button class="item-add" id="${item.id}"><span>Add</span></button>
+            <h3 class="item-name">${camper.name}</h3>
+            <p class="item-price">Id: ${camper.id}</p>
+                <p class="item-price">Phone: ${camper.phone}</p>
+                <p class="item-price">Email: ${camper.email}</p>
+                <p class="item-price">Address: ${camper.address}</p>
+                <p class="item-price">Team: ${camper.team}</p>
+
+                <button class="item-add" id="${camper.id}"><span>Add</span></button>
             </div>
             </div>
           
             `;
     });
     container.innerHTML = template.join("");
-    /* Add items to cart */
+    /* Add items to database */
     let addButtons = document.querySelectorAll(".item-add");
     addButtons.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -39,7 +43,7 @@ export async function showReclutas(category) {
       });
     });
 
-    /* funtion Add to cart */
+    /* funtion Add to database */
     let cartProducts;
     const cartProductsLocal = localStorage.getItem("cart");
     if(cartProductsLocal) {
@@ -64,11 +68,7 @@ export async function showReclutas(category) {
       /* Local Storage */
       localStorage.setItem('cart', JSON.stringify(cartProducts))
     };
-    /* Delete each item */
-
-
-
-    /* DELETE ALL ITEMS */
+    
   } 
   catch (err) {
     console.log(err);
@@ -80,5 +80,7 @@ export async function showItemsByCategory(category) {
   container.innerHTML = "";
   await showReclutas(category);
 }
+
+
 /* Call function */
 document.addEventListener("DOMContentLoaded", showReclutas());

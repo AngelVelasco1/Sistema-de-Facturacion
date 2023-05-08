@@ -1,3 +1,4 @@
+
 /* Main functions */
 import { showItemsByCategory } from "../main.js";
 import { showReclutas } from "../main.js";
@@ -9,19 +10,24 @@ export default class myAside extends HTMLElement {
   static async components() {
     return await (await fetch(pathName.replace(".js", ".html"))).text();
   }
+  
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
   }
   handleEvent(e) {
-    
     if (e.type === "click" && e.currentTarget.id !== "items") {
       const category = e.currentTarget.id;
       showItemsByCategory(category);
+      addForm.classList.add('hidden')
+
       
     } else {
       showReclutas();
+      
     }
+    
+    
   }
   worker() {
     
@@ -30,12 +36,15 @@ export default class myAside extends HTMLElement {
     wk.addEventListener("message", (e) => {});
   }
   connectedCallback() {
+    
     Promise.resolve(myAside.components()).then((html) => {
       this.shadowRoot.innerHTML = html;
       this.buttons = this.shadowRoot.querySelectorAll(".aside-btn");
       this.buttons.forEach((button) =>
         button.addEventListener("click", this.handleEvent.bind(this))
+        
       );
+
 
     });
   }

@@ -37,35 +37,35 @@ export default class myCartAside extends HTMLElement {
         currentCart.classList.remove("hidden");
         currentCart.innerHTML = "";
 
-        const template = cartProducts.map((item) => {
+        const template = cartProducts.map((camper) => {
           return `
-        
+  
                     <div class="current-item">
-                    <img class="item-img" src='${item.image}'>
+            <img class="item-img" src='${camper.image}' onerror="this.src='./img/usuario.png'  ">
                     <div class="item-title">
                         <small>Name</small>
-                        <h3 class="item-name">${item.name}</h3>
+                        <h3 class="item-name">${camper.name}</h3>
                     </div>
-                    <div class="item-amount">
-                        <small>Amount</small>
-                        <p>${item.amount}</p>
-                    </div>
+                    
                     <div class="item-price">
-                        <small>Price</small>
-                        <p>${item.price}</p>
+                        <small>Entry date</small>
+                        <p>${camper.entry_date}</p>
                     </div>
                     <div class="total">
-                        <small>Total</small>
-                        <p>${item.amount * item.price}</p>
+                        <small>Qualified</small>
+                        <p>${camper.qualified}</p>
                     </div>
+                    <div class="total">
+                    <small>Team</small>
+                    <p>${camper.team}</p>
+                </div>
                     <button class="delete-btn" id="${
-                      item.id
+                      camper.id
                     }"><i class="bi bi-trash-fill"></i></button>
                 </div>
                           `;
         });
-        currentCart.innerHTML = template.join(" ");
-        total();
+        currentCart.innerHTML += template.join(" ");
       } else {
         emptyCart.classList.remove("hidden");
         currentCart.classList.add("hidden");
@@ -98,11 +98,7 @@ export default class myCartAside extends HTMLElement {
       updateCart();
     }
 
-    function total() {
-      const total = document.querySelector("#total");
-        const nowTotal = cartProducts.reduce((total, product) => total + (product.price * product.amount), 0);
-        total.innerText = `Total: $${nowTotal}`
-    }
+  
     // Obtener el botón de "Comprar ahora"
 const buyBtn = document.querySelector("#buy-btn");
 

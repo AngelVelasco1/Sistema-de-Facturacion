@@ -79,7 +79,9 @@ my-cart-aside {
     font-weight: 600;
     gap: 0.6rem;
 }
-
+#add {
+    color: var(--bg-color);
+}
 .footer-text {
     color: var(--bg-color-light);
     font-weight: 600;
@@ -317,3 +319,66 @@ span:hover:after {
     padding: 0.1rem 0.55rem;
     border-radius: 8px;
 }
+
+#add-camper-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box label:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
