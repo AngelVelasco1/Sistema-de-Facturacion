@@ -27,8 +27,8 @@ export const addCamper = async (camper) => {
                 'Content-Type': 'application/json'
             },
         });
+        window.location.href = "../index.html";
         const items = await response.json()
-        window.location.href = '../index.html'
         return items;
     }
     catch (err) {

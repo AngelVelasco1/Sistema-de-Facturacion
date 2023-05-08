@@ -6,7 +6,7 @@
       "name": "Juan",
       "phone": 341748741,
       "email": "Juan@gmail.com",
-      "address": "street 5",
+      "address": "street 1",
       "id_num": "457415",
       "entry": "2020",
       "id_team": 1,
@@ -15,9 +15,8 @@
       "qualified": "3",
       "team": "Sputnik",
       "age": "55",
-      "skill": {
-        "name": "Basic Programming"
-      }
+      "skill": "Frontend Development",
+      "birth": "2023-05-12"
     },
     {
       "image": "../img/usuario.png",
@@ -34,9 +33,8 @@
       "qualified": "3",
       "team": "Apolo",
       "age": "55",
-      "skill": {
-        "name": "Frontend Development"
-      }
+      "skill": "Backend Development",
+      "birth": "2023-05-12"
     },
     {
       "image": "../img/usuario.png",
@@ -53,9 +51,8 @@
       "qualified": "3",
       "age": "55",
       "team": "Artemis",
-      "skill": {
-        "name": "Basic Programming"
-      }
+      "skill": "Basic Programming",
+      "birth": "2023-05-12"
     },
     {
       "image": "../img/usuario.png",
@@ -72,9 +69,8 @@
       "id_module": 1,
       "qualified": "4",
       "team": "Sputnik",
-      "skill": {
-        "name": "Backend Development"
-      }
+      "skill": "Frontend Development",
+      "birth": "2023-05-12"
     },
     {
       "name": "",
@@ -82,7 +78,7 @@
       "age": "",
       "email": "",
       "qualified": "1",
-      "skill": "fronted",
+      "skill": "Basic Programming",
       "team": {
         "0": {},
         "1": {},
@@ -98,7 +94,7 @@
       "age": "",
       "email": "",
       "qualified": "1",
-      "skill": "basic",
+      "skill": "Basic Programming",
       "team": {
         "0": {},
         "1": {},
@@ -114,7 +110,7 @@
       "age": "",
       "email": "",
       "qualified": "1",
-      "skill": "basic",
+      "skill": "Basic Programming",
       "team": {
         "0": {},
         "1": {},
@@ -130,47 +126,11 @@
       "age": "",
       "email": "",
       "qualified": "1",
-      "skill": "basic",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
+      "skill": "Basic Programming",
+      "team": "Artemis",
       "entry": "",
       "birth": "",
       "id": 8
-    },
-    {
-      "name": "FDSDS",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "entry": "",
-      "birth": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "entry": "",
-      "birth": "",
-      "id": 10
     }
   ]
 }

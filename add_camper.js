@@ -20,6 +20,8 @@ function validateCamper(e){
     let skill = document.querySelector('#skill').value
     let entry = document.querySelector('#entry').value
     let birth = document.querySelector('#birth').value
+    let team = document.querySelector('#team').value
+
 
 
     const camperData = {
@@ -36,10 +38,7 @@ function validateCamper(e){
   
     addCamper(camperData)
 }
-if(validate(camperData)) {
-    alert('Complete all')
-    return
-}
+
 function validate(object) {
     return  (Object.values(object).every(camper => camper !== ''));
 }
