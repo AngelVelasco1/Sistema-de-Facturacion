@@ -98,47 +98,8 @@ export default class myCartAside extends HTMLElement {
       updateCart();
     }
 
-  
-    // Obtener el botón de "Comprar ahora"
-const buyBtn = document.querySelector("#buy-btn");
 
-// Agregar un event listener al botón
-buyBtn.addEventListener("click", (e) => {
-  // Obtener el ID del producto a partir del botón
-  const productId = e.currentTarget.id;
 
-  // Obtener los datos del producto del carrito
-  const cartProducts = JSON.parse(localStorage.getItem("cart")) || [];
-  const product = cartProducts.find((p) => p.id === parseInt(productId));
-
-  // Crear el modal
-  const modal = document.createElement("div");
-  modal.classList.add("modal");
-
-  // Agregar el contenido al modal
-  const content = cartProducts.map((item) => {
-    return `
-   
-  <div class="-details">
-    <p>${item.name}</p>
-    <p>${item.amount}</p>
-  </div>
-                          ;
-  `;
-  }) 
-  modal.innerHTML = content.join('');
-  updateCart();
-  clearCart();
-  // Agregar el modal a la página
-  document.body.appendChild(modal);
-
-  // Agregar un event listener para cerrar el modal
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.remove();
-    }
-  });
-});
     updateCart();
     updateEachBtn();
   }

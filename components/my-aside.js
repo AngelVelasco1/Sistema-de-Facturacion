@@ -24,7 +24,6 @@ export default class myAside extends HTMLElement {
       
     } else {
       showReclutas();
-      
     }
     
     
@@ -32,7 +31,7 @@ export default class myAside extends HTMLElement {
   worker() {
     
     let wk = new Worker("../storage/wkItems.js", { type: "module" });
-    wk.postMessage({ message: "Hola bebe " });
+    wk.postMessage({ message: "" });
     wk.addEventListener("message", (e) => {});
   }
   connectedCallback() {

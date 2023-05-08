@@ -8,12 +8,13 @@
       "email": "Juan@gmail.com",
       "address": "street 5",
       "id_num": "457415",
-      "entry_date": "2020",
+      "entry": "2020",
       "id_team": 1,
       "id_recluta": 1,
       "id_module": 1,
       "qualified": "3",
       "team": "Sputnik",
+      "age": "55",
       "skill": {
         "name": "Basic Programming"
       }
@@ -26,12 +27,13 @@
       "email": "Juan@gmail.com",
       "address": "street 5",
       "id_num": "457415",
-      "entry_date": "2020",
+      "entry": "2020",
       "id_team": 2,
       "id_recluta": 1,
       "id_module": 1,
       "qualified": "3",
       "team": "Apolo",
+      "age": "55",
       "skill": {
         "name": "Frontend Development"
       }
@@ -44,11 +46,12 @@
       "email": "Juan@gmail.com",
       "address": "street 5",
       "id_num": "457415",
-      "entry_date": "2020",
+      "entry": "2020",
       "id_team": 3,
       "id_recluta": 1,
       "id_module": 1,
       "qualified": "3",
+      "age": "55",
       "team": "Artemis",
       "skill": {
         "name": "Basic Programming"
@@ -62,7 +65,8 @@
       "email": "Juan@gmail.com",
       "address": "street 5",
       "id_num": "457415",
-      "entry_date": "2020",
+      "age": "25",
+      "entry": "2020",
       "id_team": 4,
       "id_recluta": 1,
       "id_module": 1,
@@ -71,86 +75,6 @@
       "skill": {
         "name": "Backend Development"
       }
-    },
-    {
-      "name": "dsasad",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "id": 5
-    },
-    {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "id": 6
-    },
-    {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "id": 7
-    },
-    {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 8
-    },
-    {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 9
-    },
-    {
-      "name": "",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 10
-    },
-    {
-      "name": "dsafds",
-      "phone": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 11
-    },
-    {
-      "name": "",
-      "phone": "",
-      "age": "",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 12
-    },
-    {
-      "name": "",
-      "phone": "5",
-      "age": "55",
-      "email": "",
-      "qualified": "1",
-      "skill": "basic",
-      "team": "Apolo",
-      "id": 13
     }
   ]
 }

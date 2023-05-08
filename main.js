@@ -14,6 +14,7 @@ export async function showReclutas(category) {
     const filteredItems = category
       ? items.filter((item) => item.team === category)
       : items;
+      
 
     const template = filteredItems.map((camper) => {
       return `
@@ -27,6 +28,7 @@ export async function showReclutas(category) {
                 <p class="item-price">Email: ${camper.email}</p>
                 <p class="item-price">Address: ${camper.address}</p>
                 <p class="item-price">Team: ${camper.team}</p>
+                <p class="item-price">Age: ${camper.age}</p>
 
                 <button class="item-add" id="${camper.id}"><span>Add</span></button>
             </div>

@@ -18,7 +18,8 @@ function validateCamper(e){
     let email = document.querySelector('#email').value
     let qualified = document.querySelector('#qualified').value
     let skill = document.querySelector('#skill').value
-    let team = document.querySelector('#team').value
+    let entry = document.querySelector('#entry').value
+    let birth = document.querySelector('#birth').value
 
 
     const camperData = {
@@ -28,8 +29,9 @@ function validateCamper(e){
          email,
          qualified,
          skill,
-         team
-
+         team,
+         entry,
+         birth
     }
   
     addCamper(camperData)

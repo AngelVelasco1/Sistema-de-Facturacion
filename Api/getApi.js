@@ -28,6 +28,7 @@ export const addCamper = async (camper) => {
             },
         });
         const items = await response.json()
+        window.location.href = '../index.html'
         return items;
     }
     catch (err) {
